@@ -1,0 +1,117 @@
+.auth_form {
+  margin-top: 2em;
+}
+
+.control-label {
+  display: block;
+  text-align: left;
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: .6em;
+}
+
+.form-control {
+  width: 100%;
+  border: 1px solid #DFE6E6;
+  border-radius: 4px;
+  margin: 0 0 10px 0;
+  box-sizing: border-box;
+  padding: 12px;
+  font-size: 12px;
+}
+
+.form-control::placeholder {
+  color: #B0C2C1;
+}
+
+.form-group {
+  margin: .3em 1em;
+  flex: 1;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.office .form-group {
+  text-align: left;
+  margin-left: 4em;
+}
+
+.office label {
+  position: relative;
+}
+
+.office span::before,
+.office span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.office span.radio:hover {
+  cursor: pointer;
+}
+
+.office span.radio::before {
+  left: -52px;
+  width: 45px;
+  height: 25px;
+  background-color: #A8AAC1;
+  border-radius: 50px;
+}
+
+.office span.radio::after {
+  left: -49px;
+  width: 17px;
+  height: 17px;
+  border-radius: 10px;
+  background-color: #6C788A;
+  transition: left .25s, background-color .25s;
+}
+
+input[type="radio"]:checked + label span.radio::after {
+  left: -27px;
+  background-color: var(--teal);
+}
+
+[type="file"] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+[type="file"] + label {
+  background: #fff;
+  border: 2px solid gray;
+  border-radius: 50px;
+  color: gray;
+  cursor: pointer;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 1rem 50px;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+}
+
+[type="file"] + label:hover {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.btn-white {
+  background: #fff;
+  border: 2px solid grey;
+  color: gray;
+  transition: all 0.5s ease;
+}
+
+.btn-white:hover {
+  background: grey;
+  color: #fff;
+}
