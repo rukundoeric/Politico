@@ -1,4 +1,5 @@
-@import url('./components/forms.css');
+@import url("./components/forms.css");
+@import url("./components/menu.css");
 * {
   box-sizing: border-box;
 }
@@ -7,6 +8,12 @@ body {
   margin: 0;
   font-family: "Montserrat", Helvetica, sans-serif;
   color: #666;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 p,
@@ -77,11 +84,8 @@ ul {
     margin-right: 0;
     margin-bottom: 1em;
   }
-  .buttons_link2{
+  .buttons_link2 {
     margin-top: 10px;
-  }
-  .sidebar {
-    display: none;
   }
 
   .dashboard-wrapper {
@@ -117,23 +121,29 @@ ul {
     display: none;
   }
 }
-
+.d-flex-lg {
+    display: flex;
+  }
 @media (min-width: 992px) {
   .d-lg {
     display: block;
-  }
-
-  .d-flex-lg {
-    display: flex;
   }
 
   .d-none-lg {
     display: none;
   }
 }
+@media (max-width: 930px) {
+  .d-flex-lg {
+    display: flex;
+  }
+}
 
-.login-page{
-  height: 500px;
+.login-page {
+  min-height: 500px;
+}
+.index-page{
+  min-height: 450px;
 }
 .text-right {
   text-align: right;
@@ -168,9 +178,8 @@ header.home-landing {
   margin-top: 100px;
   display: flex;
   margin-top: 3em;
-  height: 400px;
 }
-.signup_page{
+.signup_page {
   height: 700px;
 }
 
@@ -281,7 +290,13 @@ figcaption {
 .auth_buttons {
   text-decoration: none;
   color: #fff;
-  background-image: linear-gradient(to right,    #0aa5ff,#2c90fc,#b8fd33,#fec837);
+  background-image: linear-gradient(
+    to right,
+    #0aa5ff,
+    #2c90fc,
+    #b8fd33,
+    #fec837
+  );
   border-radius: 20px;
   border: 0;
   padding: 0.8em 3em;
@@ -291,13 +306,19 @@ figcaption {
   border-radius: 15px;
   text-decoration: none;
   color: #fff;
-  background-image: linear-gradient(to right,    #0aa5ff,#2c90fc,#b8fd33,#fec837);
+  background-image: linear-gradient(
+    to right,
+    #0aa5ff,
+    #2c90fc,
+    #b8fd33,
+    #fec837
+  );
   padding: 0.8em 3em;
 }
 .buttons_link2 {
   border-radius: 15px;
   background-color: white;
-  color:#0aa5ff ;
+  color: #0aa5ff;
   border: 5px solid transparent;
   border-image: linear-gradient(
     to bottom right,
@@ -366,34 +387,31 @@ ul.footer-links li a {
   font-size: 0.8em;
 }
 
-.footer-icon{
+.footer-icon {
   margin: 5px;
   width: 25px;
   height: 22px;
-  fill-opacity:1;
-  stroke:none;
-  fill-rule:nonzero;
+  fill-opacity: 1;
+  stroke: none;
+  fill-rule: nonzero;
 }
-.footer-icon.facebook{
-  fill:  #b8fd33;
+.footer-icon.facebook {
+  fill: #b8fd33;
 }
-.footer-icon.instagram{
-  fill:    #fec837
+.footer-icon.instagram {
+  fill: #fec837;
 }
-.footer-icon.twitter
-{
-  fill:   #fff;
+.footer-icon.twitter {
+  fill: #fff;
 }
-.footer-icon.google
-{
-  fill:   #b8fd33;
+.footer-icon.google {
+  fill: #b8fd33;
 }
-.footer-icon.tumbr{
- fill:   #fec837;
+.footer-icon.tumbr {
+  fill: #fec837;
 }
-.footer-icon.vk
-{
-  fill:    #fff;
+.footer-icon.vk {
+  fill: #fff;
 }
 
 .home-landing nav ul {
@@ -423,7 +441,7 @@ ul.footer-links li a {
 
 .exit-btn {
   margin-bottom: 1em;
-  margin-top: -1.3em;
+  margin-top: 0em;
   float: right;
   padding: 0 1.4em;
 }
@@ -459,12 +477,11 @@ ul.footer-links li a {
     margin: 0 0 4% 0;
   }
 
-
   .page_header .intro {
     flex: 1;
   }
 
-  .page_header .intro-buttons{
+  .page_header .intro-buttons {
     float: left;
   }
 
@@ -490,13 +507,15 @@ ul.footer-links li a {
   }
 }
 
+.container {
+  margin: 0 auto;
+}
 @media only screen and (min-width: 1024px) {
   .enterprise .cta {
     width: 40%;
   }
   .container {
     width: 90%;
-    margin: 0 auto;
   }
 
   .show-desktop {
@@ -568,12 +587,23 @@ ul.footer-links li a {
   height: 100vh;
   background: #fff;
   top: 0;
-  animation: pushUp 1500ms, pushLeft 1500ms;
+  animation: pushUp 100ms;
   animation-fill-mode: forwards;
-  animation-delay: 500ms;
+  animation-delay: 1000ms;
   animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
 }
-
+.selected {
+  border-bottom: 3px;
+  border-color: #0aa5ff;
+  color: #0aa5ff;
+}
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #0aa5ff;
+  border-radius: 50%;
+  cursor: pointer;
+}
 .preloader img {
   position: absolute;
   top: 50%;
@@ -604,6 +634,18 @@ ul.footer-links li a {
 .auth-wrapper {
   display: block;
   margin-top: 1em;
+}
+.home-recent-news {
+  padding: 5px 5px 20px 5px;
+  background: #ffffff44;
+  border-radius: 10px;
+  /* box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08); */
+}
+.home-recent-news .item {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+  padding: 10px;
+  float: left;
+  max-width: 450px;
 }
 
 .auth-containers {
@@ -780,3 +822,44 @@ blockquote:before {
   font-size: 1.1em;
   font-weight: 700;
 }
+
+@media (min-width: 420px) {
+  .profile-card {
+    width: 300px;
+  }
+}
+
+
+
+.profile-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 100px;
+  margin: auto;
+  float: left;
+  text-align: center;
+  font-family: arial;
+  margin: 10px;
+}
+
+.profile-card img {
+  height: 100px;
+}
+
+.profile-card button {
+  background-color: #b8fd33;
+  border: 0;
+  padding: 5px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.profile-card button:hover {
+  opacity: 0.7;
+}
+.fail {
+  color: #ff0000;
+}
+.winn {
+  color: #00a030;
+}
+

@@ -9,6 +9,24 @@
   font-weight: 500;
   margin-bottom: .6em;
 }
+.home-recent-label{
+  display: block;
+  text-align: left;
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: .6em;
+}
+.home-recent-label.sections{
+  font-size: 1.5em;
+}
+.home-recent-label.office{
+  font-size: 1em;
+  font-weight: inherit;
+}
+.home-recent-label.type{
+  font-size: 0.9em;
+  color: rgb(172, 172, 172); 
+}
 
 .form-control {
   width: 100%;
