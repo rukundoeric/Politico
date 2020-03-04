@@ -8,57 +8,266 @@
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./assets//imgs//logo.png"
+      href="../assets//imgs//logo.png"
     />
     <title>Politico</title>
-    <link rel="stylesheet" href="./assets//css//style.css" />
+    <link rel="stylesheet" href="../assets//css//style.css" />
   </head>
   <body>
     <div class="preloader">
-      <img src="./assets/imgs/logo.png" alt="logo" class="logo" />
+      <img src="../assets/imgs/logo.png" alt="logo" class="logo" />
     </div>
 
     <div class="container">
       <header class="home-landing">
         <a href="index.html" class="">
-          <img src="./assets/imgs/logo.png" alt="logo" class="logo" />
+          <img src="../assets/imgs/logo.png" alt="logo" class="logo" />
         </a>
 
         <nav>
           <a href="#" class="hide-desktop">
             <img
-              src="./assets/imgs/menu.svg"
+              src="../assets/imgs/menu.svg"
               alt="toggle menu"
               class="menu"
-              id="menu"
+              id="show-menu-btn"
             />
           </a>
           <ul class="show-desktop hide-mobile" id="nav">
-            <li id="exit" class="exit-btn hide-desktop exit">
-              <img src="./assets//imgs//menu.svg" alt="Exit toggle" />
+            <li><a class="selected" href="../pages/home.html">Dashboard</a></li>
+            <li><a href="../pages/parties.html">Parties</a></li>
+            <li><a href="../pages/officess.html">Officess</a></li>
+            <li><a href="../pages/petitionboard.html">Petition Board</a></li>
+            <li>
+              <img class="profile-pic" src="../assets/imgs/profile.jfif" />
             </li>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./pages/login.html">Login</a></li>
-            <li><a href="./pages/signup.html">Sign Up</a></li>
           </ul>
         </nav>
       </header>
+      <div id="menu-nav" class="menu-nav hide">
+        <nav>
+          <ul id="nav">
+              <li id="close-menu-btn" class="exit-btn exit">
+                  <img src="../assets/imgs/exit.svg" alt="Exit toggle">
+              </li>
+          </ul>
+      </nav>
+        
+        <div>
+          <img src="../assets/imgs/logo.png" alt="logo" class="logo" />
+        </div>
+        <nav class="menu-nav_nav">
+            <ul>
+                <li><a href="./dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="./add-party.html">Parties</a></li>
+                <li><a href="./add-office.html">Offices</a></li>
+                <li><a href="./petition.html">Petition Board</a></li>
+                <li><a href="./candidates-list.html">Candidates List</a></li>
+            </ul>
+        </nav>
+    </div>
       <!-- <div class="hr"></div> -->
-      <div class="page_header index-page">
+      <div class="home-page">
         <section class="intro">
-          <h1>Make your vote count</h1>
-          <p class="subhead">
-            Always vote for principle, though you may vote alone, and you may
-            cherish the sweetest reflection that your vote is never lost.
-          </p>
-          <a href="./pages/signup.html">
-            <button class="buttons_link">Get Started</button>
-          </a>
-          </button>
-          <button class="buttons_link2">Learn More</button>
-        </section>
-        <section>
-          <img src="./assets/imgs/polit2.gif" width="400" alt="undraw icon" />
+          <div class="home-recent-news">
+            <div class="d-flex-col">
+              <label for="email" class="home-recent-label sections"
+                ><b>Ongoing Elections:</b></label
+              >
+              <div>
+                <div class="form-group item">
+                  <div class="form-group">
+                    <b
+                      ><label for="email" class="home-recent-label office"
+                        >Office</label
+                      ></b
+                    >
+                    <div class="form-group">
+                      <label for="email" class="home-recent-label">Name:</label>
+                      <div class="form-group">
+                        <label for="email" class="home-recent-label type"
+                          >Mayor of Kigali</label
+                        >
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email" class="home-recent-label">Type:</label>
+                      <div class="form-group">
+                        <label for="email" class="home-recent-label type"
+                          >Local Government</label
+                        >
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email" class="home-recent-label"
+                        >Candidates:</label
+                      >
+                      <div>
+                        <div class="profile-card">
+                          <img
+                            src="../assets/imgs/polit3.jfif"
+                            alt="Denim Jeans"
+                            style="width:100%"
+                          />
+                          <p>Eric Prestein</p>
+                          <p>FPR</p>
+                          <p><button>Vote</button></p>
+                        </div>
+                        <div class="profile-card">
+                          <img
+                            src="../assets/imgs/polit4.jfif"
+                            alt="Denim Jeans"
+                            style="width:100%"
+                          />
+                          <p>Eric Prestein</p>
+                          <p>FPR</p>
+                          <p><button>Vote</button></p>
+                        </div>
+                        <div class="profile-card">
+                          <img
+                            src="../assets/imgs/poli5.jfif"
+                            alt="Denim Jeans"
+                            style="width:100%"
+                          />
+                          <p>Eric Prestein</p>
+                          <p>FPR</p>
+                          <p><button>Vote</button></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group item">
+                  <div class="form-group">
+                    <b
+                      ><label for="email" class="home-recent-label office"
+                        >Office</label
+                      ></b
+                    >
+                    <div class="form-group">
+                      <label for="email" class="home-recent-label">Name:</label>
+                      <div class="form-group">
+                        <label for="email" class="home-recent-label type"
+                          >Mayor of Kigali</label
+                        >
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email" class="home-recent-label">Type:</label>
+                      <div class="form-group">
+                        <label for="email" class="home-recent-label type"
+                          >Local Government</label
+                        >
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email" class="home-recent-label"
+                        >Candidates:</label
+                      >
+                      <div>
+                        <div class="profile-card">
+                          <img
+                            src="../assets/imgs/polit3.jfif"
+                            alt="Denim Jeans"
+                            style="width:100%"
+                          />
+                          <p>Eric Prestein</p>
+                          <p>FPR</p>
+                          <p><button>Vote</button></p>
+                        </div>
+                        <div class="profile-card">
+                          <img
+                            src="../assets/imgs/polit4.jfif"
+                            alt="Denim Jeans"
+                            style="width:100%"
+                          />
+                          <p>Eric Prestein</p>
+                          <p>FPR</p>
+                          <p><button>Vote</button></p>
+                        </div>
+                        <div class="profile-card">
+                          <img
+                            src="../assets/imgs/poli5.jfif"
+                            alt="Denim Jeans"
+                            style="width:100%"
+                          />
+                          <p>Eric Prestein</p>
+                          <p>FPR</p>
+                          <p><button>Vote</button></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <label for="email" class="home-recent-label sections"
+                ><b>Recently Election Results:</b></label
+              >
+              <div class="d-flex-lg">
+                <div class="form-group item">
+                  <div class="form-group">
+                    <b
+                      ><label for="email" class="home-recent-label office"
+                        >Office</label
+                      ></b
+                    >
+                    <div class="form-group">
+                      <label for="email" class="home-recent-label">Name:</label>
+                      <div class="form-group">
+                        <label for="email" class="home-recent-label type"
+                          >Mayor of Kigali</label
+                        >
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email" class="home-recent-label">Type:</label>
+                      <div class="form-group">
+                        <label for="email" class="home-recent-label type"
+                          >Local Government</label
+                        >
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email" class="home-recent-label"
+                        >Candidates:</label
+                      >
+                      <div>
+                        <div class="profile-card">
+                          <img
+                            src="../assets/imgs/polit3.jfif"
+                            alt="Denim Jeans"
+                            style="width:100%"
+                          />
+                          <p>Eric Prestein</p>
+                          <p class="fail">25%</p>
+                        </div>
+                        <div class="profile-card">
+                          <img
+                            src="../assets/imgs/polit4.jfif"
+                            alt="Denim Jeans"
+                            style="width:100%"
+                          />
+                          <p>Eric Prestein</p>
+                          <p class="winn">53%</p>
+                          <p><button>Winner</button></p>
+                        </div>
+                        <div class="profile-card">
+                          <img
+                            src="../assets/imgs/poli5.jfif"
+                            alt="Denim Jeans"
+                            style="width:100%"
+                          />
+                          <p>Eric Prestein</p>
+                          <p class="fail">32%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
@@ -90,7 +299,7 @@
       </div>
     </footer>
     <div class="footer-r"></div>
-    <script src="assets/js/app.js"></script>
+    <script src="../assets/js/home.js"></script>
   </body>
   <!--Define all Icon-->
   <svg version="1.1" style="display: none;">
