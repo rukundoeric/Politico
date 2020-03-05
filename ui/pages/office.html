@@ -36,7 +36,7 @@
           <ul class="show-desktop hide-mobile" id="nav">
             <li><a class="selected" href="../pages/home.html">Dashboard</a></li>
             <li><a href="./party.html">Parties</a></li>
-            <li><a href="./office.html">Officess</a></li>
+            <li><a href="./office.html">Offices</a></li>
             <li><a href="../pages/petitionboard.html">Petition Board</a></li>
             <li>
               <img class="profile-pic" src="../assets/imgs/profile.jfif" />
@@ -72,18 +72,18 @@
           <div class="home-recent-news">
             <div class="d-flex-col">
               <label for="email" class="home-recent-label sections"
-                ><b>Parties:</b></label
+                ><b>Offices:</b></label
               >
               <div class="container">
                 <button id="add-new-btn" class="add-new-btn" type="button">
-                  <i class="fa fa-plus"></i> Add New Party
+                  <i class="fa fa-plus"></i> Add New Office
                 </button>
               </div>
 
               <div class="modal" id="add-new-party-modal">
                 <div class="modal-container">
                   <div class="modal_title text-center">
-                    <h2>Add Party</h2>
+                    <h2>Add Office</h2>
                   </div>
                   <div class="modal_body" id="#add">
                     <div class="errors form-group">
@@ -91,13 +91,6 @@
                     </div>
                     <form role="form" method="POST" id="add-party">
                       <div class="d-flex-col">
-                        <div class="form-group"  id="profile-image-div">
-                          <label>
-                            <input type="file" id="fileUpload" style="width: 0.1px;height: 0.1px;position: absolute;z-index: -1">
-                            <img src="../assets/imgs/party-logo-image.png" alt="" id="profile-image">
-                          </label>
-                        </div>
-                        <span>Drag and drop you image in profile icon above or click on it to select the image</span><br>
                         <div class="form-group">
                           <label for="name" class="control-label">Name</label>
                           <input
@@ -108,16 +101,14 @@
                           />
                         </div>
                         <div class="form-group">
-                          <label for="hq_addr" class="control-label"
-                            >HQ Address</label
-                          >
-                          <input
-                            type="text"
-                            name="hq_addr"
-                            class="form-control"
-                            id="hq_addr"
-                          />
-                        </div>
+                          <label for="" class="control-label">Type</label>
+                          <select name="type" class="form-control" id="office-type">
+                              <option value="Federal">Federal</option>
+                              <option value="Legislative">Legislative</option>
+                              <option value="State">State</option>
+                              <option value="Local">Local</option>
+                          </select>
+                      </div>
                         <button
                           class="add-new-btn"
                           id="add-btn"
@@ -130,32 +121,152 @@
                 </div>
               </div>
               <div class="form-group">
-                <div>
-                  <div class="party-profile-card">
-                    <img
-                      src="../assets/imgs/imagesrfrfrf.png"
-                      alt="Denim Jeans"
-                    />
-                    <p>Republican Party</p>
-                    <p>(RP)</p>
-                    <div class="party-actions-button">
-                      <button>Modify</button><button>Remove</button>
+                <div class="d-flex-col">
+                  <div class="form-group">
+                    <label for="email" class="home-recent-label">Federal:</label>
+                    <div>
+                      <div class="office-profile-card">
+                        <div class="form-group">
+                          <label for="email" class="home-recent-label">Name:</label>
+                          <div class="form-group">
+                            <label for="email" class="home-recent-label type"
+                              >Mayor of Kigali</label
+                            >
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="email" class="home-recent-label">Type:</label>
+                          <div class="form-group">
+                            <label for="email" class="home-recent-label type"
+                              >Federal</label
+                            >
+                          </div>
+                        </div>
+                        <div class="office-actions-button">
+                          <div><a href="./view_candidates.html">View Candidates</a></div>
+                          <button>Apply for Election</button>
+                        </div>
+                      </div>
+                      <div class="office-profile-card">
+                        <div class="form-group">
+                          <label for="email" class="home-recent-label">Name:</label>
+                          <div class="form-group">
+                            <label for="email" class="home-recent-label type"
+                              >Mayor of Kigali</label
+                            >
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="email" class="home-recent-label">Type:</label>
+                          <div class="form-group">
+                            <label for="email" class="home-recent-label type"
+                              >Federal</label
+                            >
+                          </div>
+                        </div>
+                        <div class="office-actions-button">
+                          <div><a href="./view_candidates.html">View Candidates</a></div>
+                          <button>Apply for Election</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="party-profile-card">
-                    <img src="../assets/imgs/images565.png" alt="Denim Jeans" />
-                    <p>Democratic Party</p>
-                    <p>(DP)</p>
-                    <div class="party-actions-button">
-                      <button>Modify</button><button>Remove</button>
+                  <div class="form-group">
+                    <label for="email" class="home-recent-label">Local Government:</label>
+                    <div>
+                      <div class="office-profile-card">
+                        <div class="form-group">
+                          <label for="email" class="home-recent-label">Name:</label>
+                          <div class="form-group">
+                            <label for="email" class="home-recent-label type"
+                              >Mayor of Kigali</label
+                            >
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="email" class="home-recent-label">Type:</label>
+                          <div class="form-group">
+                            <label for="email" class="home-recent-label type"
+                              >Local Government</label
+                            >
+                          </div>
+                        </div>
+                        <div class="office-actions-button">
+                          <div><a href="./view_candidates.html">View Candidates</a></div>
+                          <button>Apply for Election</button>
+                        </div>
+                      </div>
+                      <div class="office-profile-card">
+                        <div class="form-group">
+                          <label for="email" class="home-recent-label">Name:</label>
+                          <div class="form-group">
+                            <label for="email" class="home-recent-label type"
+                              >Mayor of Kigali</label
+                            >
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="email" class="home-recent-label">Type:</label>
+                          <div class="form-group">
+                            <label for="email" class="home-recent-label type"
+                              >Local Government</label
+                            >
+                          </div>
+                        </div>
+                        <div class="office-actions-button">
+                          <div><a href="./view_candidates.html">View Candidates</a></div>
+                          <button>Apply for Election</button>
+                        </div>
+                      </div>
+                      <div class="office-profile-card">
+                        <div class="form-group">
+                          <label for="email" class="home-recent-label">Name:</label>
+                          <div class="form-group">
+                            <label for="email" class="home-recent-label type"
+                              >Mayor of Kigali</label
+                            >
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="email" class="home-recent-label">Type:</label>
+                          <div class="form-group">
+                            <label for="email" class="home-recent-label type"
+                              >Local Government</label
+                            >
+                          </div>
+                        </div>
+                        <div class="office-actions-button">
+                          <div><a href="./view_candidates.html">View Candidates</a></div>
+                          <button>Apply for Election</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="party-profile-card">
-                    <img src="../assets/imgs/imagesfrf.png" alt="Denim Jeans" />
-                    <p>Socialist Workers Party</p>
-                    <p>(SWP)</p>
-                    <div class="party-actions-button">
-                      <button>Modify</button><button>Remove</button>
+                  <div class="form-group">
+                    <label for="email" class="home-recent-label">State:</label>
+                    <div>
+                      <div class="office-profile-card">
+                        <div class="form-group">
+                          <label for="email" class="home-recent-label">Name:</label>
+                          <div class="form-group">
+                            <label for="email" class="home-recent-label type"
+                              >Mayor of Kigali</label
+                            >
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="email" class="home-recent-label">Type:</label>
+                          <div class="form-group">
+                            <label for="email" class="home-recent-label type"
+                              >State</label
+                            >
+                          </div>
+                        </div>
+                        <div class="office-actions-button">
+                          <div><a href="./view_candidates.html">View Candidates</a></div>
+                          <button>Apply for Election</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

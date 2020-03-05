@@ -645,7 +645,7 @@ ul.footer-links li a {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
   padding: 10px;
   float: left;
-  max-width: 450px;
+  max-width: 550px;
 }
 
 .auth-containers {
@@ -833,8 +833,19 @@ blockquote:before {
 
 .profile-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 100px;
+  max-width: 130px;
   float: left;
+  text-align: center;
+  font-family: arial;
+  margin: 10px;
+}
+.office-profile-card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 250px;
+  margin: auto;
+  padding: 10px;
+  float: left;
+  border-radius: 0px;
   text-align: center;
   font-family: arial;
   margin: 10px;
@@ -852,11 +863,23 @@ blockquote:before {
 }
 
 .profile-card img {
-  height: 100px;
+  height: 130px;
 }
 .party-profile-card img{
   height: 200px;
   width: 200px;
+}
+.office-profile-card button{
+  background-color: #0aa5ff;
+  padding: 5px 10px 5px 10px;
+  border: 0;
+  color: white;
+  border-radius: 10px;
+  margin: 3px;
+}
+.office-actions-button a{
+  color: #fec837;
+  text-decoration: underline;
 }
 .party-actions-button button:nth-child(1){
   background-color: #0aa5ff;
