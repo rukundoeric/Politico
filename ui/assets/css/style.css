@@ -647,6 +647,12 @@ ul.footer-links li a {
   float: left;
   max-width: 550px;
 }
+.item-profile{
+  float: left;
+}
+.history-item{
+  float: left;
+}
 
 .auth-containers {
   margin: 0 auto;
