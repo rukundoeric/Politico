@@ -834,8 +834,18 @@ blockquote:before {
 .profile-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 100px;
-  margin: auto;
   float: left;
+  text-align: center;
+  font-family: arial;
+  margin: 10px;
+}
+.party-profile-card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 250px;
+  margin: auto;
+  padding: 10px;
+  float: left;
+  border-radius: 20px;
   text-align: center;
   font-family: arial;
   margin: 10px;
@@ -843,6 +853,31 @@ blockquote:before {
 
 .profile-card img {
   height: 100px;
+}
+.party-profile-card img{
+  height: 200px;
+  width: 200px;
+}
+.party-actions-button button:nth-child(1){
+  background-color: #0aa5ff;
+  padding: 5px 10px 5px 10px;
+  border: 0;
+  color: white;
+  border-radius: 10px;
+  margin: 3px;
+}
+
+.party-actions-button button:nth-child(2){
+  background-color: #fec837;
+  padding: 5px 10px 5px 10px;
+  border: 0;
+  color: white;
+  border-radius: 10px;
+  margin: 3px;
+}
+
+.party-profile-card p{
+  font-size: 20px;
 }
 
 .profile-card button {
@@ -863,3 +898,60 @@ blockquote:before {
   color: #00a030;
 }
 
+.party-page{
+  min-height: 700px;
+}
+.add-new-btn{
+  padding: 7px 20px 7px 20px;
+  background-color:#00cc80;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(194, 194, 194, 0.493);
+  z-index: 21;
+  overflow-y: auto;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 20px;
+  visibility: 0 0.3s;
+  transition: opacity 0.3s 0, visibility 0 0.3s;
+}
+
+.modal.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s 0,
+  visibility 0 0;
+  -moz-transition: opacity 0.3s 0,
+  visibility 0 0;
+  transition: opacity 0.3s 0,
+  visibility 0 0;
+}
+
+.modal.is-visible .modal-container {
+  transform: translateY(0);
+}
+
+.modal-container {
+  position: relative;
+  width: 80%;
+  max-width: 500px;
+  background: #FFF;
+  margin: 3em auto 4em;
+  cursor: auto;
+  border-radius: 0.25em;
+  padding: 20px;
+}
+.modal_body img{
+  width: 150px;
+  height: 150px;
+}
