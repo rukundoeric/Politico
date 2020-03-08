@@ -37,9 +37,18 @@
             <li><a class="selected" href="../pages/home.html">Dashboard</a></li>
             <li><a href="./party.html">Parties</a></li>
             <li><a href="./office.html">Offices</a></li>
-            <li><a href="../pages/petitionboard.html">Petition Board</a></li>
             <li>
-              <a href="./profile.html"><img class="profile-pic" src="../assets/imgs/profile.jfif" /></a>
+              <div
+                id="profile-dec"
+                class="d-flex-row profile-pic-container"
+                style="flex: 1;"
+              >
+                <img class="profile-pic" src="../assets/imgs/profile.jfif" />
+                <div class="d-flex-col">
+                  <label for="">Eric prestein</label>
+                  <label for="">@presteineric</label>
+                </div>
+              </div>
             </li>
           </ul>
         </nav>
@@ -47,24 +56,23 @@
       <div id="menu-nav" class="menu-nav hide">
         <nav>
           <ul id="nav">
-              <li id="close-menu-btn" class="exit-btn exit">
-                  <img src="../assets/imgs/exit.svg" alt="Exit toggle">
-              </li>
+            <li id="close-menu-btn" class="exit-btn exit">
+              <img src="../assets/imgs/exit.svg" alt="Exit toggle" />
+            </li>
           </ul>
-      </nav>
-        
+        </nav>
+
         <div>
           <img src="../assets/imgs/logo.png" alt="logo" class="logo" />
         </div>
         <nav class="menu-nav_nav">
-            <ul>
-                <li><a href="./dashboard.html" class="active">Dashboard</a></li>
-                <li><a href="./party.html">Parties</a></li>
-                <li><a href="./office.html">Offices</a></li>
-                <li><a href="./petition.html">Petition Board</a></li>
-            </ul>
+          <ul>
+            <li><a href="./dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="./party.html">Parties</a></li>
+            <li><a href="./office.html">Offices</a></li>
+          </ul>
         </nav>
-    </div>
+      </div>
       <!-- <div class="hr"></div> -->
       <div class="home-page">
         <section class="intro">
@@ -110,11 +118,11 @@
                           />
                           <p>Eric Prestein</p>
                           <img
-                          src="../assets/imgs/imagesrfrfrf.png"
-                          alt="Denim Jeans"
-                          style="width:30px;height: 30px;"
-                        />
-                        <p>(DR)</p>
+                            src="../assets/imgs/imagesrfrfrf.png"
+                            alt="Denim Jeans"
+                            style="width:30px;height: 30px;"
+                          />
+                          <p>(DR)</p>
                           <p><button>Vote</button></p>
                         </div>
                         <div class="profile-card">
@@ -125,11 +133,11 @@
                           />
                           <p>Eric Prestein</p>
                           <img
-                          src="../assets/imgs/imagesfrf.png"
-                          alt="Denim Jeans"
-                          style="width:30px;height: 30px;"
-                        />
-                        <p>(DP)</p>
+                            src="../assets/imgs/imagesfrf.png"
+                            alt="Denim Jeans"
+                            style="width:30px;height: 30px;"
+                          />
+                          <p>(DP)</p>
                           <p><button>Vote</button></p>
                         </div>
                         <div class="profile-card">
@@ -140,11 +148,11 @@
                           />
                           <p>Eric Prestein</p>
                           <img
-                          src="../assets/imgs/imagesrfrfrf.png"
-                          alt="Denim Jeans"
-                          style="width:30px;height: 30px;"
-                        />
-                        <p>(SWP)</p>
+                            src="../assets/imgs/imagesrfrfrf.png"
+                            alt="Denim Jeans"
+                            style="width:30px;height: 30px;"
+                          />
+                          <p>(SWP)</p>
                           <p><button>Vote</button></p>
                         </div>
                       </div>
@@ -187,11 +195,11 @@
                           />
                           <p>Eric Prestein</p>
                           <img
-                          src="../assets/imgs/imagesrfrfrf.png"
-                          alt="Denim Jeans"
-                          style="width:30px;height: 30px;"
-                        />
-                        <p>(DR)</p>
+                            src="../assets/imgs/imagesrfrfrf.png"
+                            alt="Denim Jeans"
+                            style="width:30px;height: 30px;"
+                          />
+                          <p>(DR)</p>
                           <p><button>Vote</button></p>
                         </div>
                         <div class="profile-card">
@@ -202,11 +210,11 @@
                           />
                           <p>Eric Prestein</p>
                           <img
-                          src="../assets/imgs/imagesfrf.png"
-                          alt="Denim Jeans"
-                          style="width:30px;height: 30px;"
-                        />
-                        <p>(DP)</p>
+                            src="../assets/imgs/imagesfrf.png"
+                            alt="Denim Jeans"
+                            style="width:30px;height: 30px;"
+                          />
+                          <p>(DP)</p>
                           <p><button>Vote</button></p>
                         </div>
                         <div class="profile-card">
@@ -217,11 +225,11 @@
                           />
                           <p>Eric Prestein</p>
                           <img
-                          src="../assets/imgs/imagesrfrfrf.png"
-                          alt="Denim Jeans"
-                          style="width:30px;height: 30px;"
-                        />
-                        <p>(SWP)</p>
+                            src="../assets/imgs/imagesrfrfrf.png"
+                            alt="Denim Jeans"
+                            style="width:30px;height: 30px;"
+                          />
+                          <p>(SWP)</p>
                           <p><button>Vote</button></p>
                         </div>
                       </div>
@@ -295,6 +303,82 @@
                   </div>
                 </div>
               </div>
+              <label for="email" class="home-recent-label sections"
+              ><b>Offices:</b></label
+            >
+            <div class="home-offices">
+              <div class="form-group item-offices">
+               <div>
+                <div class="office-profile-card">
+                  <div class="form-group">
+                    <label for="email" class="home-recent-label">Name:</label>
+                    <div class="form-group">
+                      <label for="email" class="home-recent-label type"
+                        >Mayor of Kigali</label
+                      >
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="home-recent-label">Type:</label>
+                    <div class="form-group">
+                      <label for="email" class="home-recent-label type"
+                        >Federal</label
+                      >
+                    </div>
+                  </div>
+                  <div class="office-actions-button">
+                    <div><a href="./view_candidates.html">View Candidates</a></div>
+                    <button>Apply for Election</button>
+                  </div>
+                </div>
+                <div class="office-profile-card">
+                  <div class="form-group">
+                    <label for="email" class="home-recent-label">Name:</label>
+                    <div class="form-group">
+                      <label for="email" class="home-recent-label type"
+                        >Mayor of Kigali</label
+                      >
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="home-recent-label">Type:</label>
+                    <div class="form-group">
+                      <label for="email" class="home-recent-label type"
+                        >Federal</label
+                      >
+                    </div>
+                  </div>
+                  <div class="office-actions-button">
+                    <div><a href="./view_candidates.html">View Candidates</a></div>
+                    <button>Apply for Election</button>
+                  </div>
+                </div>
+                <div class="office-profile-card">
+                  <div class="form-group">
+                    <label for="email" class="home-recent-label">Name:</label>
+                    <div class="form-group">
+                      <label for="email" class="home-recent-label type"
+                        >Mayor of Kigali</label
+                      >
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="home-recent-label">Type:</label>
+                    <div class="form-group">
+                      <label for="email" class="home-recent-label type"
+                        >Federal</label
+                      >
+                    </div>
+                  </div>
+                  <div class="office-actions-button">
+                    <div><a href="./view_candidates.html">View Candidates</a></div>
+                    <button>Apply for Election</button>
+                  </div>
+                </div>
+               </div>
+               <p><a href="./office.html">View All Offices</a></p>
+              </div>
+            </div>
             </div>
           </div>
         </section>
@@ -329,6 +413,7 @@
     </footer>
     <div class="footer-r"></div>
     <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/util.js"></script>
   </body>
   <!--Define all Icon-->
   <svg version="1.1" style="display: none;">

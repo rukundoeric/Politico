@@ -9,6 +9,13 @@
   font-weight: 500;
   margin-bottom: .6em;
 }
+
+.control-label.info a{
+  color: #0aa5ff;
+}
+.control-label.info{
+  font-size: 15px;
+}
 .home-recent-label{
   display: block;
   text-align: left;

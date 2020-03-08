@@ -1,2 +1,2 @@
 # Politico
-// gh-pages
+https://rukundoeric.github.io/Politico/ui/
