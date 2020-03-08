@@ -428,11 +428,7 @@ ul.footer-links li a {
 
 .home-landing nav ul li a {
   color: #fff;
-  text-decoration: none;
   display: block;
-  width: 100%;
-  padding: 1em 2em;
-  transition: 0.3s ease-in-out;
 }
 
 .home-landing nav ul li a:hover {
@@ -600,7 +596,6 @@ ul.footer-links li a {
 .profile-pic {
   width: 40px;
   height: 40px;
-  border: 3px solid #0aa5ff;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -646,6 +641,11 @@ ul.footer-links li a {
   padding: 10px;
   float: left;
   max-width: 550px;
+}
+.home-offices .item-offices {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+  padding: 10px;
+  float: left;
 }
 .item-profile{
   float: left;
@@ -983,4 +983,29 @@ blockquote:before {
 .modal_body img{
   width: 150px;
   height: 150px;
+}
+
+.task-content {
+  display: none;
+}
+.task-content.active{
+	display: block;
+}
+.profile-pic-container{
+  box-shadow: 0 2px 5px 0 rgba(95, 95, 95, 0.568);
+  border-radius: 35px;
+  cursor: pointer;
+}
+.profile-pic-container div{
+  margin-left: 10px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-pic-container label:nth-child(1){
+  font-size: 15px;
+}
+.profile-pic-container label:nth-child(2){
+  font-size: 12px;
 }
