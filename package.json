@@ -1,0 +1,44 @@
+{
+  "name": "politico",
+  "version": "1.0.0",
+  "description": "https://rukundoeric.github.io/Politico/ui/",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node server/index.js",
+    "test": "nyc --reporter=html --reporter=text mocha server/test/*.js --exit --require @babel/register --require regenerator-runtime"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rukundoeric/Politico.git"
+  },
+  "author": "Rukundo Eric",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rukundoeric/Politico/issues"
+  },
+  "homepage": "https://github.com/rukundoeric/Politico#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "coveralls": "^3.0.4",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.1",
+    "nyc": "^14.1.1"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "pg": "^7.18.2"
+  }
+}
